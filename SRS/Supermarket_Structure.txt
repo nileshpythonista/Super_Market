@@ -1,0 +1,55 @@
+
+						'Super Mart Assignment'
+
+    1. Services: 
+        1. Customer Registration                                    --> Checked
+        2. Coupouns / Discount Offers                               --> Not yet
+        3. Products                                                 --> Checked
+        4. Home delivery (Inclusion of Shiiping Charges)            --> Not yet
+        5. Billing / Customer Cart '[Vat + gst]'                    --> Possible 
+        6. Product Replacement (Datetime Module)                    --> Not yet
+        7. Product Catalouge                                        --> Checked
+        8. Refunds                                                  --> Not yet
+        9. Consumer Complaints                                      --> Not yet
+        10. Employee Salaries                                       --> Checked                 
+        11. Monthly Balance Sheet                                   --> Can be obtained through Query
+        12. Goods Balance Sheet                                     --> Possible
+    
+    2. Data Storage Method: Database[SQL]/ Flask-SQLAlchemy:
+                                Structure:  CUSTOMER [ customer id / name / DoB (mmddyyyy) / gender / profession (checkbox) / income / mobile / email / address / username / password]--> 'Unique ID should be Genrated'
+                                                      
+                                                    default: 'Address[Pune]'
+
+                                            EMPLOYEE [ empid (int) / empname (varchar20)/ emprole (varchar20)/ empsal (float) / username / password]
+                                                    Employee Structure: 01  Manager   
+                                                                        02  Supervisor
+                                                                        01  Inventory Manager
+                                                                        05  Worker
+                                                                        04  Cashier
+                                                                        06  Security
+                                            
+                                            PRODUCTS [ prodid (int)/ prodname (varchar20)/ prodcateogry (varchar20) / prodstock (int)/ prodpprice (float)/ prodsprice (float)/ prodindate (datetime) / prodexpdate ]
+                                                    mandatory: 'All fields'
+                                            
+                                            Customer Order Summary:  [bill id / customer id /  amount / bill date time]
+                                                BILLING  [ billid (int)/ billcustid (int)/ billprodid (int)/ billprodqty (int)/ billsprice (float)/ billdate (datetime)]
+                                            
+                                            Customer Order Details : [order id (bill id) / product-1 id / product-1 qty / product-1 selling price]
+                                            
+    3. Task Assigned:
+        1. Object Creation
+                customer_info.py            
+                product_info.py
+                employee_info.py
+                Database_updatation.py '{using FalskSQLAlchemy} / pandas / pymysql'
+                purcahse_Service.py --> Customoer Cart (Offline / Online_Shipping)
+                Balance_sheet.py
+                product_Replacement_refund_complaint.py
+                        
+        2. Database Management:
+                
+        3. GUI Preparation (Web_Application):
+            
+    4. 
+    
+       
